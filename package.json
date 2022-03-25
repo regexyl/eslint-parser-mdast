@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "eslint .",
+    "lint": "eslint --ext .ts src/",
     "test": "echo \"Test: Mock test\"",
     "prepare": "yarn run build",
     "prepublishOnly": "yarn test && yarn run lint",
